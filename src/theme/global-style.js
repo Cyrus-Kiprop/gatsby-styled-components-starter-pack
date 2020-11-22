@@ -6,4 +6,14 @@ import reset from "styled-reset"
 
 export const GlobalStyle = createGlobalStyle`
 ${reset}
+/* add some browser base styles */
+
+html {
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 `
