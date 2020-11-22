@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <GlobalStyle />
+        {/* <GlobalStyle /> */}
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
