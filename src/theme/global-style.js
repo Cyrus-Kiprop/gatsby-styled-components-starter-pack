@@ -50,7 +50,7 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: ${({ theme }) => theme.font.fira};
     font-size: ${({ theme }) => theme.fontSize.lg};
-    color: '#1a202c';
+    color: ${({ theme }) => theme.colours.grey[900]};
 
 }
 
