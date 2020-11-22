@@ -38,6 +38,15 @@ export const theme = {
     black: "900",
   },
 
+  lineHeight: {
+    none: "1",
+    tight: "1.25",
+    snug: "1.375",
+    normal: "1.5",
+    relaxed: "1.625",
+    loose: "2",
+  },
+
   spacing: {
     px: "1px",
     0: "0",
@@ -177,6 +186,15 @@ export const theme = {
       900: "#702459",
     },
   },
+
+  letterSpacing: {
+    tighter: "-0.05em",
+    tight: "-0.025em",
+    normal: "0",
+    wide: "0.025em",
+    wider: "0.05em",
+    widest: "0.1em",
+  },
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -190,7 +208,7 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: ${({ theme }) => theme.font.fira};
     font-size: ${({ theme }) => theme.fontSize.lg};
-    color: ${({ theme }) => theme.colours.grey[900]};
+    color: ${({ theme }) => theme.colours.gray[900]};
 
 }
 
