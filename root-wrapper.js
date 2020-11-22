@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from "./src/components/layout"
-import { GlobalStyle } from "./src/theme/global-style"
+import { GlobalStyle, theme } from "./src/theme/global-style"
+import { ThemeProvider } from "styled-components"
 
 export const WrapRootElement = ({ element }) => {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Layout>{element}</Layout>
-    </div>
+    </ThemeProvider>
   )
 }

@@ -4,6 +4,16 @@
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
 
+// theme provider object
+export const theme = {
+  font: {
+    sans: "Cambay, sans-serif",
+    serif: "Arvo, sans",
+    fira: "Fira Code, san-serif",
+    monospace: '"Ubuntu Mono", monospace',
+  },
+}
+
 export const GlobalStyle = createGlobalStyle`
 ${reset}
 
